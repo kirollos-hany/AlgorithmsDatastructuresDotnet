@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiro.Algorithms", "Kiro.Alg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiro.Datastructures", "Kiro.Datastructures\Kiro.Datastructures.csproj", "{3114D8ED-247E-483D-AE60-F82AC057C475}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiro.Algorithms.Console", "Kiro.Algorithms.Console\Kiro.Algorithms.Console.csproj", "{8E4E5EDF-29C1-4249-907C-C124BC9D91E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiro.Datastructures.Console", "Kiro.Datastructures.Console\Kiro.Datastructures.Console.csproj", "{AC877536-696E-4418-9E79-5779B3F8F8EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{3114D8ED-247E-483D-AE60-F82AC057C475}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3114D8ED-247E-483D-AE60-F82AC057C475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3114D8ED-247E-483D-AE60-F82AC057C475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4E5EDF-29C1-4249-907C-C124BC9D91E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4E5EDF-29C1-4249-907C-C124BC9D91E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4E5EDF-29C1-4249-907C-C124BC9D91E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4E5EDF-29C1-4249-907C-C124BC9D91E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC877536-696E-4418-9E79-5779B3F8F8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC877536-696E-4418-9E79-5779B3F8F8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC877536-696E-4418-9E79-5779B3F8F8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC877536-696E-4418-9E79-5779B3F8F8EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
