@@ -21,14 +21,16 @@ namespace Kiro.Algorithms.Graph
             }
         }
 
-        public int DijkstraAlgorithm(TNode startNode, TNode finishNode)
+        public (int cost, IReadOnlyList<TNode> cheapestPath) DijkstraAlgorithm(TNode startNode, TNode finishNode)
         {
             var costs = InitializeCosts(startNode);
             var parentsTable = InitializeParentTable(startNode);
             var visitedNodes = new HashSet<TNode>();
             var node = FindLowestCostNode(costs, visitedNodes);
+            var cheapestPath = new List<TNode>();
             while (node != null &&  !node.Equals(default))
             {
+                cheapestPath.Add(node);
                 var cost = costs[node];
                 var neighbours = _graph[node];
                 foreach (var neighbour in neighbours.Keys)
@@ -37,13 +39,14 @@ namespace Kiro.Algorithms.Graph
                     if (costs[neighbour] <= newCost) continue;
                     costs[neighbour] = newCost;
                     parentsTable[neighbour] = node;
+                    cheapestPath.Add(neighbour);
                 }
 
                 visitedNodes.Add(node);
                 node = FindLowestCostNode(costs, visitedNodes);
             }
 
-            return costs[finishNode];
+            return (costs[finishNode], cheapestPath);
         }
         private Dictionary<TNode, int> InitializeCosts(TNode startNode)
         {
